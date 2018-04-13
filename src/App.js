@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
 
 import Posts from './components/Posts';
 import PostForm from './components/Postform';
 
-const store = createStore(() => [], {}, applyMiddleware()); //createstore and applymiddleware is part of redux
+//const store = createStore(() => [], {}, applyMiddleware()); //createstore and applymiddleware is part of redux
+
+import store from './store';
 
 class App extends Component {
   render() {
