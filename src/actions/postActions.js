@@ -22,7 +22,7 @@ export const createPost = (postData) => dispatch => { //postData cos submitting 
   })
   .then(res => res.json())
   .then(post => dispatch({
-    type: NEW_POSTS,
+    type: NEW_POST,
     payload: post
   }));
 }
