@@ -15,6 +15,11 @@ export default function(state = initialState, action) { //action(an object) incl
         ...state,
         items: action.payload
       };
+      case NEW_POST:
+      return {
+        ...state,
+        item: action.payload
+      };
     default: //which type is being passed for the case of fetch posts
       return state;
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux'; //the provider we brought in from react redux library as well as connect, it connects components from redux store that was provided by the provideer component
 import { fetchPosts } from '../actions/postActions';
 
@@ -33,6 +34,11 @@ class Posts extends Component {
       </div>
     )
   }
+}
+
+Posts.propTypes = {
+  fetchPosts: PropTypes.func.isRequired,
+  posts: PropTypes.array.isRequired
 }
 
 const mapStateToProps = state => ({
