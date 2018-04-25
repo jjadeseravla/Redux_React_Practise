@@ -6,8 +6,6 @@ import { Provider } from 'react-redux';
 import Posts from './components/Posts';
 import PostForm from './components/Postform';
 
-//const store = createStore(() => [], {}, applyMiddleware()); //createstore and applymiddleware is part of redux
-
 import store from './store';
 
 class App extends Component {
